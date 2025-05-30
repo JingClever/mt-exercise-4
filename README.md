@@ -51,22 +51,22 @@ Evaluate the model:
 
 ## Edition for running three models over word-level and byte pair encoding
 1) Preparation work:
-       - Create `download_moses.sh` to download required packages for tokenization.
-       - Create `process.sh` for preprocessing data.
-       - Fork `joeynmt-hotfixed` and then in a different directory (exercise-4) in `torch3` to run:
+       1. Create `download_moses.sh` to download required packages for tokenization.
+       2. Create `process.sh` for preprocessing data.
+       3. Fork `joeynmt-hotfixed` and then in a different directory (exercise-4) in `torch3` to run:
               ```bash
               git clone https://github.com/JingClever/joeynmt-hotfixed.git
 
 2) Preprocessing:
-       - Use `head` command in `process.sh` to cut the training data to 100k sentence pairs.
-       - Create `preprocess.py` to use sacremoses to tokenizer the sentences.
-       - Run `preprocess.py` in `process.sh` to tokenize train, dev and test dataset.
-       - Run command from `subword-nmt` to create BPE files in `process.sh`. (Now the files are set for -s 3200, feel free to revise the -s to any number)
+       1. Use `head` command in `process.sh` to cut the training data to 100k sentence pairs.
+       2. Create `preprocess.py` to use sacremoses to tokenizer the sentences.
+       3. Run `preprocess.py` in `process.sh` to tokenize train, dev and test dataset.
+       4. Run command from `subword-nmt` to create BPE files in `process.sh`. (Now the files are set for -s 3200, feel free to revise the -s to any number)
 3) Implementation:
-       - Create three config files for different models setting.
-       - Change beam_size for evaluation.
+       1. Create three config files for different models setting.
+       2. Change beam_size for evaluation.
 4) Visualization:
-       - Create `draw_graphs.py` to visualize the result and run it in `process.sh`.
+       1. Create `draw_graphs.py` to visualize the result and run it in `process.sh`.
        
 
 
