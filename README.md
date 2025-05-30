@@ -56,6 +56,7 @@ Evaluate the model:
        3. Fork `joeynmt-hotfixed` and then in a different directory (exercise-4) in `torch3` to run:
               ```
               git clone https://github.com/JingClever/joeynmt-hotfixed.git
+   
               ```
 
 3) Preprocessing:
