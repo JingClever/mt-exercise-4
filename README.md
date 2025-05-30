@@ -17,9 +17,9 @@ macOS/Linux users: No special setup needed; shell scripts should run normally.
 Windows users: Either use Windows Subsystem for Linux (WSL) or a Unix-compatible shell like Git Bash.
 If you're using PowerShell or Command Prompt, manual setup is required.
 
-### Setup Instructions
+## Setup Instructions
 
-## For macOS / Linux / WSL / Git Bash users
+### For macOS / Linux / WSL / Git Bash users
 
 Clone your fork of the repository + Create a virtual environment:
    ```
@@ -30,6 +30,7 @@ Clone your fork of the repository + Create a virtual environment:
     ./scripts/make_virtualenv.sh
 
 Important: Then activate the env by executing the source command that is output by the shell script above.
+
 
 Install required dependencies - Follow the instructions provided in the exercise PDF.
 
@@ -48,29 +49,24 @@ Evaluate the model:
 
        ./scripts/evaluate.sh
 
-## For Windows (Command Prompt / PowerShell users)
-Manually create and activate a virtual environment:
+## Edition for running three models over word-level and byte pair encoding
+1) Preparation work:
+       - Create `download_moses.sh` to download required packages for tokenization.
+       - Create `process.sh` for preprocessing data.
+       - Fork `joeynmt-hotfixed` and then in a different directory (exercise-4) in `torch3` to run:
+              ```bash
+              git clone https://github.com/JingClever/joeynmt-hotfixed.git
 
-        python -m venv mt_env
-        mt_env\Scripts\activate
+2) Preprocessing:
+       - Use `head` command in `process.sh` to cut the training data to 100k sentence pairs.
+       - Create `preprocess.py` to use sacremoses to tokenizer the sentences.
+       - Run `preprocess.py` in `process.sh` to tokenize train, dev and test dataset.
+       - Run command from `subword-nmt` to create BPE files in `process.sh`. (Now the files are set for -s 3200, feel free to revise the -s to any number)
+3) Implementation:
+       - Create three config files for different models setting.
+       - Change beam_size for evaluation.
+4) Visualization:
+       - Create `draw_graphs.py` to visualize the result and run it in `process.sh`.
+       
 
-Note: The make_virtualenv.sh script will not work in native Windows shells.
-
-Manually download the dataset
-
-Open the download_iwslt_2017_data.sh file in a text editor and run the commands one-by-one in your shell.
-Alternatively, use Git Bash or WSL to run it directly.
-
-Modify, train, and evaluate
-Once setup is complete, use the instructions in the exercise PDF to run training and evaluation (either by adapting the .sh scripts manually, or by using Git Bash/WSL).
-
-#### Notes for Windows Users
-
-  Using Git Bash or WSL is highly recommended for compatibility.
-
-  If using native PowerShell or Command Prompt:
-
-  Manual recreation of shell script steps will be necessary.
-
-  Always activate your virtual environment before running any training or evaluation steps.
 

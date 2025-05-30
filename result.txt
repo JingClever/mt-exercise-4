@@ -1,0 +1,324 @@
+model_name transformer_word_config
+2025-05-29 13:35:51,676 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 13:35:51,702 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 13:35:51,764 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 13:35:51,840 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_word_2000/27000.ckpt.
+2025-05-29 13:35:51,843 - INFO - joeynmt.tokenizers - it tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2025-05-29 13:35:51,843 - INFO - joeynmt.tokenizers - en tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2025-05-29 13:35:51,849 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 13:35:51,849 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=5, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 13:36:21,810 - INFO - joeynmt.prediction - Generation took 29.9547[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 15.5,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "41.2/20.4/11.1/6.1 (BP = 1.000 ratio = 1.240 hyp_len = 38789 ref_len = 31287)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+33 seconds
+model_name transformer_bpe_2k_config
+2025-05-29 13:36:55,047 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 13:36:55,081 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 13:36:55,141 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 13:36:55,198 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_bpe_2000/43000.ckpt.
+2025-05-29 13:36:55,205 - INFO - joeynmt.tokenizers - it tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 13:36:55,205 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 13:36:55,208 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 13:36:55,208 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=5, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 13:38:07,027 - INFO - joeynmt.prediction - Generation took 71.8092[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 24.9,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "60.2/33.6/20.2/12.5 (BP = 0.934 ratio = 0.936 hyp_len = 29279 ref_len = 31287)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+74 seconds
+model_name transformer_bpe_3k_config
+2025-05-29 13:48:12,964 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 13:48:13,040 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 13:48:13,100 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 13:48:13,159 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_bpe_3200/40500.ckpt.
+2025-05-29 13:48:13,167 - INFO - joeynmt.tokenizers - it tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 13:48:13,167 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 13:48:13,170 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 13:48:13,170 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=5, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 13:49:23,376 - INFO - joeynmt.prediction - Generation took 70.1953[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 25.5,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "60.3/33.6/20.3/12.6 (BP = 0.952 ratio = 0.953 hyp_len = 29811 ref_len = 31287)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+72 seconds
+model_name transformer_bpe_3k_config
+2025-05-29 13:59:32,973 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 13:59:33,048 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 13:59:33,113 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 13:59:33,180 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_bpe_3200/40500.ckpt.
+2025-05-29 13:59:33,189 - INFO - joeynmt.tokenizers - it tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 13:59:33,189 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 13:59:33,192 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 13:59:33,192 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=3, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 14:00:14,540 - INFO - joeynmt.prediction - Generation took 41.3388[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 25.2,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "59.3/32.7/19.6/11.9 (BP = 0.969 ratio = 0.970 hyp_len = 30336 ref_len = 31287)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+44 seconds
+model_name transformer_bpe_3k_config
+2025-05-29 14:00:51,823 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 14:00:51,897 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 14:00:51,962 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 14:00:52,024 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_bpe_3200/40500.ckpt.
+2025-05-29 14:00:52,032 - INFO - joeynmt.tokenizers - it tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:00:52,032 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:00:52,035 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 14:00:52,035 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=7, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 14:02:26,649 - INFO - joeynmt.prediction - Generation took 94.6044[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 25.6,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "60.5/34.0/20.6/12.8 (BP = 0.943 ratio = 0.944 hyp_len = 29543 ref_len = 31287)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+97 seconds
+model_name transformer_bpe_3k_config
+2025-05-29 14:03:02,027 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 14:03:02,101 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 14:03:02,163 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 14:03:02,224 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_bpe_3200/40500.ckpt.
+2025-05-29 14:03:02,233 - INFO - joeynmt.tokenizers - it tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:03:02,233 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:03:02,236 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 14:03:02,236 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=9, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 14:05:12,415 - INFO - joeynmt.prediction - Generation took 130.1691[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 25.3,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "60.6/33.9/20.6/12.7 (BP = 0.937 ratio = 0.939 hyp_len = 29376 ref_len = 31287)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+132 seconds
+model_name transformer_bpe_3k_config
+2025-05-29 14:05:54,490 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 14:05:54,628 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 14:05:54,696 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 14:05:54,754 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_bpe_3200/40500.ckpt.
+2025-05-29 14:05:54,763 - INFO - joeynmt.tokenizers - it tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:05:54,764 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:05:54,767 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 14:05:54,767 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=11, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 14:08:30,030 - INFO - joeynmt.prediction - Generation took 155.2546[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 25.3,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "60.5/33.9/20.6/12.7 (BP = 0.935 ratio = 0.937 hyp_len = 29327 ref_len = 31287)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+158 seconds
+model_name transformer_bpe_3k_config
+2025-05-29 14:08:54,347 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 14:08:54,423 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 14:08:54,493 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 14:08:54,556 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_bpe_3200/40500.ckpt.
+2025-05-29 14:08:54,565 - INFO - joeynmt.tokenizers - it tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:08:54,566 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:08:54,569 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 14:08:54,569 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=4, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 14:09:52,410 - INFO - joeynmt.prediction - Generation took 57.8321[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 25.4,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "59.6/33.1/19.9/12.2 (BP = 0.965 ratio = 0.966 hyp_len = 30215 ref_len = 31287)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+60 seconds
+model_name transformer_bpe_3k_config
+2025-05-29 14:10:21,855 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 14:10:21,931 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 14:10:21,999 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 14:10:22,060 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_bpe_3200/40500.ckpt.
+2025-05-29 14:10:22,068 - INFO - joeynmt.tokenizers - it tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:10:22,068 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:10:22,071 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 14:10:22,071 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=6, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 14:11:48,637 - INFO - joeynmt.prediction - Generation took 86.5538[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 25.5,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "60.3/33.7/20.4/12.6 (BP = 0.949 ratio = 0.950 hyp_len = 29725 ref_len = 31287)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+89 seconds
+model_name transformer_bpe_3k_config
+2025-05-29 14:12:55,620 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 14:12:55,726 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 14:12:55,788 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 14:12:55,842 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_bpe_3200/40500.ckpt.
+2025-05-29 14:12:55,851 - INFO - joeynmt.tokenizers - it tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:12:55,851 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:12:55,854 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 14:12:55,854 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=8, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 14:14:48,291 - INFO - joeynmt.prediction - Generation took 112.4281[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 25.5,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "60.6/33.9/20.6/12.7 (BP = 0.942 ratio = 0.944 hyp_len = 29531 ref_len = 31287)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+115 seconds
+model_name transformer_bpe_3k_config
+2025-05-29 14:15:39,659 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 14:15:39,734 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 14:15:39,796 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 14:15:39,857 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_bpe_3200/40500.ckpt.
+2025-05-29 14:15:39,867 - INFO - joeynmt.tokenizers - it tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:15:39,867 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:15:39,870 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 14:15:39,870 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=10, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 14:18:00,289 - INFO - joeynmt.prediction - Generation took 140.4100[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 25.5,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "60.6/34.0/20.6/12.8 (BP = 0.938 ratio = 0.940 hyp_len = 29409 ref_len = 31287)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+142 seconds
+model_name transformer_bpe_3k_config
+2025-05-29 14:18:34,206 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 14:18:34,282 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 14:18:34,320 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 14:18:34,376 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_bpe_3200/40500.ckpt.
+2025-05-29 14:18:34,386 - INFO - joeynmt.tokenizers - it tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:18:34,386 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2025-05-29 14:18:34,389 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 14:18:34,389 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=12, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 14:21:22,750 - INFO - joeynmt.prediction - Generation took 168.3532[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 25.3,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "60.7/34.0/20.7/12.9 (BP = 0.930 ratio = 0.932 hyp_len = 29162 ref_len = 31287)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+171 seconds

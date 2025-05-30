@@ -1,0 +1,9 @@
+2025-05-29 13:35:51,676 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-29 13:35:51,702 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-29 13:35:51,764 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-29 13:35:51,840 - INFO - joeynmt.helpers - Load model from /Users/jingma/Desktop/machine_translation/mt-exercise-4/models/transformer_word_2000/27000.ckpt.
+2025-05-29 13:35:51,843 - INFO - joeynmt.tokenizers - it tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2025-05-29 13:35:51,843 - INFO - joeynmt.tokenizers - en tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2025-05-29 13:35:51,849 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-29 13:35:51,849 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=5, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-29 13:36:21,810 - INFO - joeynmt.prediction - Generation took 29.9547[sec]. (No references given)
