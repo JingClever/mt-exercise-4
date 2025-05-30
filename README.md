@@ -61,19 +61,19 @@ Evaluate the model:
 
   ```
 
-3) Preprocessing:
+2) Preprocessing:
    
 - Use `head` command in `process.sh` to cut the training data to 100k sentence pairs.
 - Create `preprocess.py` to use sacremoses to tokenizer the sentences.
 - Run `preprocess.py` in `process.sh` to tokenize train, dev and test dataset.
 - Run command from `subword-nmt` to create BPE files in `process.sh`. (Now the files are set for -s 3200, feel free to revise the -s to any number)
    
-5) Implementation:
+3) Implementation:
 
 - Create three config files for different models setting.
 - Change beam_size for evaluation.
    
-7) Visualization:
+4) Visualization:
    
 - Create `draw_graphs.py` to visualize the result and run it in `process.sh`.
        
